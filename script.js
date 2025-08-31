@@ -90,19 +90,40 @@ contactForm.addEventListener('submit', async (e) => {
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     
+    // Get form data
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+    };
+    
     // Show loading state
     submitBtn.textContent = 'Sending...';
     submitBtn.disabled = true;
     
     try {
-        // Simulate form submission (replace with actual endpoint)
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
         
-        // Show success message
-        showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-        contactForm.reset();
+        const result = await response.json();
+        
+        if (response.ok) {
+            // Show success message
+            showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+            contactForm.reset();
+        } else {
+            // Show error message from server
+            showNotification(result.message || 'Failed to send message. Please try again.', 'error');
+        }
         
     } catch (error) {
+        console.error('Error sending message:', error);
         // Show error message
         showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
     } finally {
