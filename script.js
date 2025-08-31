@@ -39,59 +39,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
 
-// Observe elements for animation
-document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.section-header, .about-content, .portfolio-item, .service-item, .testimonial-item, .contact-content');
-    animateElements.forEach(el => observer.observe(el));
-});
-
-// Typing animation for hero title
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    type();
-}
-
-// Initialize typing animation when page loads
-window.addEventListener('load', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    const originalText = heroTitle.textContent;
-    typeWriter(heroTitle, originalText, 80);
-});
-
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    const heroContent = document.querySelector('.hero-content');
-    
-    if (hero && heroContent) {
-        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
 
 // Counter animation for stats
 function animateCounter(element, target, duration = 2000) {
@@ -320,51 +269,3 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Smooth reveal animation for elements
-function revealOnScroll() {
-    const reveals = document.querySelectorAll('.portfolio-item, .service-item, .testimonial-item');
-    
-    reveals.forEach(element => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
-        
-        if (elementTop < windowHeight - elementVisible) {
-            element.classList.add('fade-in-up');
-        }
-    });
-}
-
-window.addEventListener('scroll', revealOnScroll);
-
-// Initialize all animations on page load
-document.addEventListener('DOMContentLoaded', () => {
-    // Add initial animation class to hero elements
-    setTimeout(() => {
-        document.querySelector('.hero-content').classList.add('fade-in-up');
-        document.querySelector('.hero-image').classList.add('fade-in-up');
-    }, 500);
-    
-    // Trigger initial scroll check
-    revealOnScroll();
-});
-
-// Performance optimization: Throttle scroll events
-function throttle(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Apply throttling to scroll events
-const throttledScroll = throttle(() => {
-    revealOnScroll();
-}, 100);
-
-window.addEventListener('scroll', throttledScroll);
