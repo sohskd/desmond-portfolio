@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chris Barin - Design Portfolio</title>
+    <title>Desmond Soh - Freelance Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,15 +13,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span>Chris Barin</span>
+                <a href="#home">Desmond Soh</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -34,24 +34,16 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="hero-greeting">Hello, I'm</span>
-                    <span class="hero-name">Chris Barin</span>
-                </h1>
-                <p class="hero-subtitle">Adobe Certified Design Instructor & Creative Director</p>
-                <p class="hero-description">
-                    With 14 years of experience in web and app design, I create digital experiences 
-                    that captivate and convert. Based in Bucharest, Romania.
-                </p>
+                <h1 class="hero-title">Hi, I'm Desmond Soh</h1>
+                <h2 class="hero-subtitle">Freelance Software Engineer</h2>
+                <p class="hero-description">I build custom websites and web applications for businesses and individuals.</p>
                 <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="hero-avatar">
-                    <img src="https://via.placeholder.com/400x400/dc2626/ffffff?text=CB" alt="Chris Barin">
-                </div>
+                <img src="images/profile.jpg" alt="Desmond Soh - Profile Picture" class="profile-image">
             </div>
         </div>
         <div class="scroll-indicator">
@@ -64,55 +56,51 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate designer with a mission to create meaningful digital experiences</p>
+                <p class="section-subtitle">Get to know more about my background and expertise</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a 36-year-old design professional from Bucharest, Romania, with 14 years of experience in creating compelling digital experiences. As an Adobe Certified Instructor, I combine technical expertise with creative vision to deliver exceptional web and app designs.</p>
-                    <p>My approach focuses on user-centered design principles, ensuring every project not only looks stunning but also provides intuitive functionality that drives results.</p>
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">14+</span>
-                            <span class="stat-label">Years Experience</span>
+                    <p>I'm a passionate software engineer with a Computer Science degree from Nanyang Technological University. With years of experience in web development, I specialize in creating custom digital solutions that help businesses and individuals establish their online presence.</p>
+                    <p>My approach combines technical expertise with creative problem-solving to deliver websites and applications that are not only functional but also engaging and user-friendly. I believe in clean code, modern design principles, and delivering projects that exceed expectations.</p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">200+</span>
-                            <span class="stat-label">Projects Completed</span>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Happy Clients</span>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Databases</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>Cloud Services</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-skills">
-                    <h3>Expertise</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fas fa-palette"></i>
-                            <span>UI/UX Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Mobile App Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-code"></i>
-                            <span>Web Design</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Adobe Certified Training</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-paint-brush"></i>
-                            <span>Brand Identity</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Design Strategy</span>
-                        </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>30+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
                     </div>
                 </div>
             </div>
@@ -123,135 +111,143 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">My Portfolio</h2>
-                <p class="section-subtitle">A showcase of my best work across different design disciplines</p>
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Recent projects and client work</p>
             </div>
-            
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All Work</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
-                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-            </div>
-
             <div class="portfolio-grid">
-                <!-- Web Design Projects -->
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Web+Design+1" alt="Web Design Project">
-                        <div class="portfolio-overlay">
-                            <h3>Corporate Website</h3>
-                            <p>Modern corporate website with clean design</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">Live Demo</a>
+                            <a href="#" class="portfolio-link">GitHub</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item" data-category="web">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Web+Design+2" alt="Web Design Project">
-                        <div class="portfolio-overlay">
-                            <h3>Creative Agency Site</h3>
-                            <p>Bold and creative agency portfolio</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Restaurant Management App</h3>
+                        <p>Modern web application for restaurant operations including order management and customer tracking.</p>
+                        <div class="portfolio-tech">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">Live Demo</a>
+                            <a href="#" class="portfolio-link">GitHub</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Mobile App Projects -->
-                <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Mobile+App+1" alt="Mobile App Design">
-                        <div class="portfolio-overlay">
-                            <h3>Fitness Tracking App</h3>
-                            <p>Intuitive fitness app with gamification</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time analytics dashboard with data visualization and reporting capabilities for business insights.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">Live Demo</a>
+                            <a href="#" class="portfolio-link">GitHub</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="portfolio-item" data-category="mobile">
+                <div class="portfolio-item">
                     <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Mobile+App+2" alt="Mobile App Design">
-                        <div class="portfolio-overlay">
-                            <h3>Food Delivery App</h3>
-                            <p>User-friendly food ordering experience</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Learning Management System</h3>
+                        <p>Educational platform with course management, student tracking, and interactive learning modules.</p>
+                        <div class="portfolio-tech">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Prisma</span>
+                        </div>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link">Live Demo</a>
+                            <a href="#" class="portfolio-link">GitHub</a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Branding Projects -->
-                <div class="portfolio-item" data-category="branding">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Brand+Identity+1" alt="Brand Identity">
-                        <div class="portfolio-overlay">
-                            <h3>Tech Startup Branding</h3>
-                            <p>Complete brand identity for tech startup</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can help you with</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
                     </div>
+                    <h3>Website Development</h3>
+                    <p>Custom websites built with modern technologies, optimized for performance and user experience.</p>
                 </div>
-
-                <!-- UI/UX Projects -->
-                <div class="portfolio-item" data-category="ui-ux">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=UI+UX+Design" alt="UI/UX Design">
-                        <div class="portfolio-overlay">
-                            <h3>SaaS Dashboard</h3>
-                            <p>Complex data visualization dashboard</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
+                    <h3>Web Applications</h3>
+                    <p>Full-stack web applications with complex functionality, databases, and user management systems.</p>
                 </div>
-
-                <!-- E-commerce Projects -->
-                <div class="portfolio-item" data-category="ecommerce">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=E-commerce" alt="E-commerce Design">
-                        <div class="portfolio-overlay">
-                            <h3>Fashion E-commerce</h3>
-                            <p>Elegant online fashion store</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
                     </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design approach creating intuitive interfaces that enhance user engagement and satisfaction.</p>
                 </div>
-
-                <div class="portfolio-item" data-category="ecommerce">
-                    <div class="portfolio-image">
-                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=E-commerce+2" alt="E-commerce Design">
-                        <div class="portfolio-overlay">
-                            <h3>Electronics Store</h3>
-                            <p>Modern electronics e-commerce platform</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first development ensuring your website looks and works perfectly on all devices and screen sizes.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed optimization, SEO improvements, and technical enhancements to boost your website's performance.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing maintenance, updates, and technical support to keep your website running smoothly.</p>
                 </div>
             </div>
         </div>
@@ -261,67 +257,49 @@
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Client Reviews</h2>
+                <h2 class="section-title">Client Testimonials</h2>
                 <p class="section-subtitle">What my clients say about working with me</p>
             </div>
-            
             <div class="testimonials-grid">
                 <div class="testimonial-item">
                     <div class="testimonial-content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Chris delivered an exceptional website design that exceeded our expectations. His attention to detail and understanding of our brand was remarkable."</p>
+                        <p>"Desmond delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and technical expertise made the entire process smooth and efficient."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="https://via.placeholder.com/60x60/dc2626/ffffff?text=AM" alt="Ana Mihai">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
                         <div class="author-info">
-                            <h4>Ana Mihai</h4>
-                            <span>CEO, TechStart Romania</span>
+                            <h4>Sarah Chen</h4>
+                            <p>CEO, TechStart Solutions</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-item">
                     <div class="testimonial-content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Working with Chris was a pleasure. He transformed our mobile app concept into a beautiful, user-friendly design that our customers love."</p>
+                        <p>"Working with Desmond was a pleasure. He understood our requirements perfectly and delivered a beautiful, functional website that our customers love."</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="https://via.placeholder.com/60x60/dc2626/ffffff?text=DP" alt="David Popescu">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
                         <div class="author-info">
-                            <h4>David Popescu</h4>
-                            <span>Founder, AppVision</span>
+                            <h4>Michael Rodriguez</h4>
+                            <p>Founder, Creative Agency</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-item">
                     <div class="testimonial-content">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p>"Chris's expertise in both design and Adobe training helped our team level up significantly. Highly professional and knowledgeable."</p>
+                        <p>"Desmond's expertise in full-stack development helped us launch our product on time and within budget. Highly recommend his services!"</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="https://via.placeholder.com/60x60/dc2626/ffffff?text=MI" alt="Maria Ionescu">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
                         <div class="author-info">
-                            <h4>Maria Ionescu</h4>
-                            <span>Creative Director, DesignHub</span>
+                            <h4>Emily Watson</h4>
+                            <p>Product Manager, InnovateCorp</p>
                         </div>
                     </div>
                 </div>
@@ -334,70 +312,58 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to start your next project? Let's create something amazing together</p>
+                <p class="section-subtitle">Ready to start your next project? Let's talk!</p>
             </div>
-            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Address</h3>
-                            <p>Soseaua Giurgiului 230<br>Sector 4, București<br>Romania</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p><a href="tel:0720123123">0720.123.123</a></p>
-                        </div>
-                    </div>
-                    
                     <div class="contact-item">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Email</h3>
-                            <p><a href="mailto:chris@chrisbarin.com">chris@chrisbarin.com</a></p>
+                            <h4>Email</h4>
+                            <p>desmond.soh@email.com</p>
                         </div>
                     </div>
-                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+65 9123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Singapore</p>
+                        </div>
+                    </div>
                     <div class="social-links">
-                        <h3>Follow Me</h3>
-                        <div class="social-icons">
-                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        </div>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -406,8 +372,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Chris Barin. All rights reserved.</p>
-                <p>Crafted with passion in Bucharest, Romania</p>
+                <p>&copy; 2024 Desmond Soh. All rights reserved.</p>
+                <p>Freelance Software Engineer | Building Digital Solutions</p>
             </div>
         </div>
     </footer>
