@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Barin - Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Chris Barin</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hello, I'm</span>
+                    <span class="hero-name">Chris Barin</span>
+                </h1>
+                <p class="hero-subtitle">Adobe Certified Design Instructor & Creative Director</p>
+                <p class="hero-description">
+                    With 14 years of experience in web and app design, I create digital experiences 
+                    that captivate and convert. Based in Bucharest, Romania.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="https://via.placeholder.com/400x400/dc2626/ffffff?text=CB" alt="Chris Barin">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate designer with a mission to create meaningful digital experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a 36-year-old design professional from Bucharest, Romania, with 14 years of experience in creating compelling digital experiences. As an Adobe Certified Instructor, I combine technical expertise with creative vision to deliver exceptional web and app designs.</p>
+                    <p>My approach focuses on user-centered design principles, ensuring every project not only looks stunning but also provides intuitive functionality that drives results.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">14+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-palette"></i>
+                            <span>UI/UX Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile App Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Web Design</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Adobe Certified Training</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Brand Identity</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Design Strategy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Portfolio</h2>
+                <p class="section-subtitle">A showcase of my best work across different design disciplines</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Web Design Projects -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Web+Design+1" alt="Web Design Project">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Website</h3>
+                            <p>Modern corporate website with clean design</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Web+Design+2" alt="Web Design Project">
+                        <div class="portfolio-overlay">
+                            <h3>Creative Agency Site</h3>
+                            <p>Bold and creative agency portfolio</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Mobile+App+1" alt="Mobile App Design">
+                        <div class="portfolio-overlay">
+                            <h3>Fitness Tracking App</h3>
+                            <p>Intuitive fitness app with gamification</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Mobile+App+2" alt="Mobile App Design">
+                        <div class="portfolio-overlay">
+                            <h3>Food Delivery App</h3>
+                            <p>User-friendly food ordering experience</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Projects -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Brand+Identity+1" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <h3>Tech Startup Branding</h3>
+                            <p>Complete brand identity for tech startup</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Projects -->
+                <div class="portfolio-item" data-category="ui-ux">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=UI+UX+Design" alt="UI/UX Design">
+                        <div class="portfolio-overlay">
+                            <h3>SaaS Dashboard</h3>
+                            <p>Complex data visualization dashboard</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Projects -->
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=E-commerce" alt="E-commerce Design">
+                        <div class="portfolio-overlay">
+                            <h3>Fashion E-commerce</h3>
+                            <p>Elegant online fashion store</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=E-commerce+2" alt="E-commerce Design">
+                        <div class="portfolio-overlay">
+                            <h3>Electronics Store</h3>
+                            <p>Modern electronics e-commerce platform</p>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Client Reviews</h2>
+                <p class="section-subtitle">What my clients say about working with me</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Chris delivered an exceptional website design that exceeded our expectations. His attention to detail and understanding of our brand was remarkable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/dc2626/ffffff?text=AM" alt="Ana Mihai">
+                        <div class="author-info">
+                            <h4>Ana Mihai</h4>
+                            <span>CEO, TechStart Romania</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Working with Chris was a pleasure. He transformed our mobile app concept into a beautiful, user-friendly design that our customers love."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/dc2626/ffffff?text=DP" alt="David Popescu">
+                        <div class="author-info">
+                            <h4>David Popescu</h4>
+                            <span>Founder, AppVision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Chris's expertise in both design and Adobe training helped our team level up significantly. Highly professional and knowledgeable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60x60/dc2626/ffffff?text=MI" alt="Maria Ionescu">
+                        <div class="author-info">
+                            <h4>Maria Ionescu</h4>
+                            <span>Creative Director, DesignHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project? Let's create something amazing together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>Soseaua Giurgiului 230<br>Sector 4, București<br>Romania</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:0720123123">0720.123.123</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:chris@chrisbarin.com">chris@chrisbarin.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Me</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Chris Barin. All rights reserved.</p>
+                <p>Crafted with passion in Bucharest, Romania</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
